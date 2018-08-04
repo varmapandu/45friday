@@ -1,0 +1,107 @@
+<section class="coursebanner" style="background-image: url('../../assets/45friday_images/service_banner.png');">
+  <div fxLayout="row wrap" class="Aligner">
+    <div fxLayout="column">
+      <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+        <div class="image" fxHide.sm fxHide.xs fxLayoutAlign="start center">
+          <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+            <div class="icons padding10" *ngFor="let list of images">
+              <a href="{{list.href}}" _target="blank">
+                <img src="{{list.imgSrc}}" alt="{{list.imgAlt}}">
+              </a>
+            </div>
+            <div fxLayout="row" fxHide.sm fxHide.xs fxHide.md>
+              <div class="action1">
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- <section class="coursebanner" style="background-image: url('../../assets/45friday_images/about-us2.png');">
+  <div fxLayout="column"  fxHide.sm fxHide.xs fxLayoutAlign="space-evenly center">
+    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="25">
+      <div class="para" *ngFor="let item of data.para1">
+        <h2>{{item.header}}</h2>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+<div class="" style="padding-bottom: 40px;">
+  <h5 class="header padding15 text-center">TEAM</h5>
+</div>
+
+<div fxLayout="row" >
+  <div fxLayout="row" fxFlex="10" fxHide.sm fxHide.xs fxLayoutAlign="space-around center" class="padding15">
+    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25" fxLayoutAlign="center center">
+      <span id="mySpan" style="float: left;">ABOUT US
+        <div class="action">
+          <div class="bar"></div>
+        </div>
+      </span>
+    </div>
+  </div>
+
+
+  <div fxLayout="row" fxLayout.xs="column" fxFlex="90" fxLayoutAlign="space-between center">
+    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="33.333" fxFlex.lg="33.333" fxFlex.xl="33.333" *ngFor="let item of data.card1">
+      <div class="card" style="height: 222px; width: 320px;">
+        <img src="{{item.imgsrc}}">
+        <p>{{item.para}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- <div class="bgcontent">
+  <div fxLayout="row" fxLayoutAlign="center center" fxFlex=50%>
+    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="50">
+      <div class="mater" *ngFor="let item of data.para2">
+        <h4>{{item.para}}</h4>
+      </div>
+    </div>
+  </div>
+
+  <div fxLayout="row" fxLayoutAlign="center center" fxFlex=50%>
+    <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="50">
+      <div class="para1" *ngFor="let item of data.para3">
+        <h4>{{item.para1}}</h4>
+      </div>
+    </div>
+  </div> 
+</div> -->
+<div class="section-padding">
+  <div fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <div class="card" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25" *ngFor="let item of data.testimonials">
+      <div style="width: 320px;text-align: center;margin: auto">
+        <img class="card-img-top" style="width: 100px; height: 100px;" src={{item.imagepath}}>
+        <div class="lists">
+          <p> {{item.list}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="" style="padding-bottom: 40px;">
+  <h5 class="header padding15 text-center">INSTAGRAM</h5>
+</div>
+<div class="background">
+  <div fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center" class="cards">
+    <div class="pics" fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="25" fxFlex.lg="25" fxFlex.xl="25" *ngFor="let item of data.card">
+      <img src="{{item.imgsrc3}}">
+      <p>{{item.para}}</p>
+      <div class="icons">
+        <img src="{{item.imgsrc1}}">
+        <img src="{{item.imgsrc2}}">
+      </div>
+    </div>
+  </div>
+</div>

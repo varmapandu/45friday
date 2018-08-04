@@ -1,0 +1,65 @@
+#mySpan{
+    font-size:30px;
+    writing-mode: vertical-lr; 
+    transform: rotate(180deg);
+    
+}
+.action .bar {
+    position: absolute;
+    top: -25%;
+    left: 45%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 40%;
+    width: 2px;
+    background-color: #363F54 !important;
+   }
+
+.Title p{
+    font-size:20px;
+    text-align: center;
+}
+.display li{
+    text-align: center;
+    list-style: none;
+    vertical-align: middle;
+    padding: 12px;
+    line-height:35px;
+}
+// .action{
+//     position: absolute;
+//     top: 0%;
+//     left: 15px;
+//     height: 25%;
+//     width: 2px;
+//     background-color: #363F54 !important;
+// }
+
+ul>li.active {
+    line-height: 0px;
+    background-color:#e82093;
+    line-height:35px;
+    padding: 12px;
+}
+
+ul>li.active a{
+	color:white;
+}
+
+.section-padding{
+    padding: 30px;
+}
+
+.box{
+    background-image: url('../../../assets/45friday_images/dots.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    // border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5; 
+    background-color: #d6d7ea;
+}
+.content p{
+    font-size: 24px;
+    color: #2e3192;
+    line-height: normal;
+}

@@ -1,0 +1,95 @@
+<div *ngFor="let item of data.items">
+  <div fxLayout="row wrap" fxLayoutAlign="space-around center" class="image">
+    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+      <div class="Title padding20">
+        <h1>{{item.Title}}</h1>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="">
+    <div fxLayout="row" fxFlex="15" fxLayoutAlign="space-around center" class="padding20">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="100">
+        <div class="subtitle" fxHide.xs fxHide.sm>
+          <p>{{item.name}}</p>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row" fxFlex="70" fxLayoutAlign="space-around center">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="100" fxFlex.xl="100">
+        <div class="subtitle">
+          <h3 style="font-weight: 300;">{{item.para}}</h3>
+        </div>
+      </div>
+    </div>
+    <div fxLayout="row" fxFlex="15" fxHide.xs fxHide.xs fxLayoutAlign="space-around center" class="padding20">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="100">
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="padding20">
+    <div fxLayout="row" fxFlex="15" fxHide.xs fxHide.xs fxLayoutAlign="space-around center">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="100">
+      </div>
+    </div>
+    <div fxLayout="row" fxFlex="70" fxLayoutAlign="space-around center" class="image1">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="100" fxFlex.xl="100">
+      </div>
+    </div>
+    <div fxLayout="row" fxFlex="15" fxHide.xs fxHide.xs fxLayoutAlign="space-around center">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="100">
+      </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="padding20">
+    <div fxLayout="row" fxFlex="15" fxHide.xs fxHide.xs fxLayoutAlign="space-around center">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="100">
+      </div>
+    </div>
+    <div fxLayout="row" fxFlex="20" fxLayoutAlign="space-around center">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+        <p>{{item.Date}}</p>
+      </div>
+    </div>
+    <div fxLayout="row" fxFlex="50" fxLayoutAlign="space-around center">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+        <p>{{item.subpara}}</p>
+      </div>
+    </div>
+    <div fxLayout="row" fxFlex="15" fxHide.xs fxHide.xs fxLayoutAlign="space-around center">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="100">
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="padding20">
+    <div fxLayout="row" fxFlex="15" fxHide.xs fxHide.xs fxLayoutAlign="space-around center">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="100">
+      </div>
+    </div>
+    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex="20" fxLayoutAlign="start center">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="20" fxFlex.xl="100" *ngFor="let list of images">
+        <a href="#">
+          <img src="{{list.imgSrc}}" alt="{{list.imgAlt}}">
+        </a>
+      </div>
+    </div>
+    <div fxLayout="row" fxFlex="50" fxLayoutAlign="space-around center">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+        <p>{{item.description}}</p>
+      </div>
+    </div>
+    <div fxLayout="row" fxFlex="15" fxHide.xs fxHide.xs fxLayoutAlign="space-around center">
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="50" fxFlex.lg="50" fxFlex.xl="100">
+      </div>
+    </div>
+  </div>
+  </div>

@@ -1,0 +1,106 @@
+
+h3{
+    color:#232120;
+}
+#mySpan{
+    font-size:30px;
+    writing-mode: vertical-lr; 
+    transform: rotate(180deg);
+  }
+  .action .bar {
+    position: absolute;
+    top: -26%;
+    left: 49%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    height: 40%;
+    width: 2px;
+    background-color: #363F54 !important;
+   }
+   img{
+    height: 45px;
+    width: 40px;
+   }
+
+.container-title {
+    -webkit-transition-delay: 0.7s;
+    -o-transition-delay: 0.7s;
+    transition-delay: 0.7s;
+    opacity: 1;
+    -webkit-transform: rotate(-90deg) translateX(-50%);
+    -ms-transform: rotate(-90deg) translateX(-50%);
+    transform: rotate(-90deg) translateX(-50%);
+}
+.container-title {
+    z-index: 1;
+    padding-left: 100px;
+    position: absolute;
+    z-index: 1;
+    left: 15%;
+    -webkit-transform-origin: 0px 0px;
+    -ms-transform-origin: 0px 0px;
+    transform-origin: 0px 0px;
+    -webkit-transform: rotate(-90deg) translateX(calc(-50% - 20px));
+    -ms-transform: rotate(-90deg) translateX(calc(-50% - 20px));
+    transform: rotate(-90deg) translateX(calc(-50% - 20px));
+    opacity: 0;
+    -webkit-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+.container-title h2 {
+    font-family: National-Bold;
+    font-size: 38px;
+    position: relative;
+    color: #363F54;
+}
+
+
+
+.icons li{
+    list-style: none;
+    background: transparent;
+}
+.image{
+    background-image: url('/assets/images/background.png');
+    height:100vh;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+.action1 .bar {
+        position: absolute;
+        top:66%;
+        left:25px;
+        height:11%;
+        width: 3px;
+        background-color: #db0b32 !important;
+       } 
+
+
+
+// .content{
+//     background-image: url('/assets/background.png');
+//      width:100%;
+//      height:700px;
+//      background-repeat: no-repeat;
+//      background-size: cover;
+// }
+// .icon1{
+//  justify-content: center;
+//  padding-top:290px;
+// }
+// .icon1 img{
+//  opacity: 0.5   ;
+//  padding-top:15px;
+//  width: 40px;
+//  background-color: transparent;
+// }
+// .action {
+//     position: absolute;
+//     top:75%;
+//     left:64px;
+//     height:20%;
+//     width: 5px;
+//     background-color: #db0b32 !important;
+//    }  

@@ -1,0 +1,82 @@
+<div class="container-fluid">
+  <div fxLayout="row" *ngFor="let item of image">
+    <h1 >{{item.header}}</h1>
+  </div>  
+  <div class="content">
+  <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="100" fxFlex.lg="80" fxFlex.xl="70" *ngFor="let item of image">
+       
+        <div fxLayout="row" >
+      <div fxFlex="30%" class="row1">
+        <img src="{{item.imgsrc}}">
+      </div>
+
+
+      <div fxLayout="row">
+        <div fxLayout="column" >
+          <div fxLayout="row">
+              <div fxFlex="29%" class="row2">
+                <img src="{{item.imgsrc}}">
+              </div>
+              <div fxFlex="20%" class="row3">
+                <img src="{{item.imgsrc}}">
+              </div>
+          </div>
+
+          <div fxLayout="row">
+            <div fxFlex="77%" class="row11">
+              <img src="{{item.imgsrc}}">
+            </div>
+
+            <div fxFlex="10%" class="row12">
+              <img src="{{item.imgsrc}}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<div class="">
+  <div class="content">
+  <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="100" fxFlex.lg="80" fxFlex.xl="70"  *ngFor="let item of image">
+      <div fxLayout="row">
+      <div fxFlex="80%" class="row4">
+        <img src="{{item.imgsrc}}" >
+      </div>
+
+    
+
+      <div fxLayout="column">
+          <div fxLayout="row">
+      <div fxFlex="48%" class="row7">
+          <img src="{{item.imgsrc}}" >
+        </div>
+
+       
+         <div fxFlex="20%" class="row13">
+            <img src="{{item.imgsrc}}">
+        </div>
+      </div>
+  
+        <div fxLayout="row">
+          <div fxFlex="25%" class="row8">
+            <img src="{{item.imgsrc}}" >
+          </div>
+
+          <div fxFlex="26%" class="row9">
+            <img src="{{item.imgsrc}}">
+          </div>
+
+          <div fxFlex="20%" class="row10">
+            <img src="{{item.imgsrc}}">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- </div> -->
+</div>
+

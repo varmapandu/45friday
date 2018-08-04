@@ -1,0 +1,23 @@
+<section class="coursebanner" style="background-image: url('../../assets/45friday_images/banner_service.png');">
+  <div fxLayout="row wrap" class="Aligner">
+    <div fxLayout="column">
+      <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+        <div class="image" fxHide.sm fxHide.xs fxLayoutAlign="start center">
+          <div fxFlex.xs="100" fxFlex.sm="50" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+            <div class="icons padding10" *ngFor="let list of images">
+              <a href="{{list.href}}" _target="blank">
+                <img src="{{list.imgSrc}}" alt="{{list.imgAlt}}" height="28" width="28">
+              </a>
+            </div>
+            <div fxLayout="row" fxHide.sm fxHide.xs fxHide.md>
+              <div class="action1">
+                <div class="bar"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<app-alternate-view></app-alternate-view>

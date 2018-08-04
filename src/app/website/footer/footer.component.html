@@ -1,0 +1,136 @@
+
+<div class="" style="padding-bottom: 40px;">
+  <h5 class="header padding15 text-center">LET'S WORK TOGETHER</h5>
+
+  <footer>
+    <div fxLayout="row" fxFlex="initial" fxHide.sm fxHide.xs fxLayoutAlign="start start" class="padding15">
+      <div fxFlex.xs="10" fxFlex.sm="10" fxFlex.md="10" fxFlex.lg="10" fxFlex.xl="10" fxLayoutAlign="">
+        <span id="mySpan">CONTACT US
+          <div class="action">
+            <div class="bar"></div>
+          </div>
+        </span>
+      </div>
+    </div>
+    <div fxLayout="row" fxLayout.xs="column" fxFlex="100" fxFlexAlign="center center">
+
+      <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100" fxLayoutAlign="center center" style="background-color:#371195;color:#fff;font-weight: bold;padding:30px;">
+          <form  novalidate autocomplete="off" [formGroup]="UserDetailsForm">
+        <div>
+          <div>
+          </div>
+          <div class="Title padding15">
+            <h5><b>Let's Talk</b></h5>
+            <p><b>Drop us a Line and let's set up a time to chat</b></p>
+          </div>
+          <div>
+            <div class="img1">
+              <input type="text" required autofocus placeholder="Full name" [(ngModel)]="profile.name"  formControlName="name">
+              <span class="error" *ngIf="UserDetailsForm.get('name').touched && UserDetailsForm.get('name').hasError('required')">
+                  Name required
+                </span>
+                <span class="error" *ngIf="UserDetailsForm.get('name').touched && UserDetailsForm.get('name').hasError('pattern')">
+                      Invalid Name
+                </span>
+            </div>
+          </div>
+          <div>
+            <div class="img2">
+              <input type="email" placeholder="Email" required [(ngModel)]="profile.email" formControlName="email">
+              <span class="error" *ngIf="UserDetailsForm.get('email').touched && UserDetailsForm.get('email').hasError('required')">
+                  Email required
+              </span>
+              <span class="error" *ngIf="UserDetailsForm.get('email').touched && UserDetailsForm.get('email').hasError('pattern')">
+                  Enter valid Email
+              </span>
+            </div>
+          </div>
+          <div>
+            <div class="message">
+              <textarea rows="" placeholder="Message" [(ngModel)]="profile.message" [ngModelOptions]="{standalone: true}"></textarea>
+            </div>
+          </div>
+          <div fxLayoutAlign="center center">
+            <div class="btn">
+              <button type="submit" (click)="onSubmit(UserDetailsForm.valid)" style="width: 100px;height: 40px;border-radius: 3px;color: #fff;background-color: #371195;border: solid 1px #ffffff;" [disabled]="!UserDetailsForm.valid">Send</button>
+            </div>
+          </div>
+        </div>
+      </form>
+      </div>
+      <div fxLayout="row"  fxLayout.xs="column"  fxLayout.sm="column" fxFlex="30" fxFlexAlign="space-around center">
+          <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100"  style="background-color:#371195;color:#fff;font-weight: bold;padding:30px;">
+            <div  fxLayout="row"   fxLayoutAlign="center center">
+            <div class="title padding15">
+                  <p><a _ngcontent-c3="" href="https://plus.google.com/106611725945858700349" target="_blank">
+                    <img _ngcontent-c3="" alt="facebook-corporate" src="https://s3.ap-south-1.amazonaws.com/dl-web-assets/images/facebook-corporate.png">
+                  </a></p>
+                  <p><a _ngcontent-c3="" href="https://plus.google.com/106611725945858700349" target="_blank">
+                    <img _ngcontent-c3="" alt="twitter-corporate" src="https://s3.ap-south-1.amazonaws.com/dl-web-assets/images/twitter-corporate.png">
+                  </a></p>
+                  <p><a _ngcontent-c3="" href="" target="_blank">
+                    <img _ngcontent-c3="" alt="instagram-corporate" src="https://s3.ap-south-1.amazonaws.com/dl-web-assets/images/instagram-corporate.png">
+                  </a></p>
+                  <p><a _ngcontent-c3="" href="" target="_blank">
+                    <img _ngcontent-c3="" alt="youtube-corporate" src="https://s3.ap-south-1.amazonaws.com/dl-web-assets/images/youtube-corporate.png">
+                  </a></p>
+                  <p><a _ngcontent-c3="" href="" target="_blank">
+                    <img _ngcontent-c3="" alt="linked-corporate" src="https://s3.ap-south-1.amazonaws.com/dl-web-assets/images/youtube-corporate.png">
+                  </a></p>
+                </div>
+              </div>
+              <div fxLayout="row">
+              <div  fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxLayoutAlign="center center">
+              <div class="connect">
+                  <p><b>Connect</b></p>
+                </div>
+                </div>
+              </div>
+              <div fxLayout="row">
+                  <div  fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxLayoutAlign="center center">
+                  <div class="phone">
+                      <p>
+                          <a href="tel:040-1234567" target="_blank"><b>040-1234567</b></a>
+                          &nbsp;
+                          <span>
+                              <img src="" alt="">   
+                            </span> 
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+                  <div fxLayout="row">
+                      <div  fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxLayoutAlign="center center">
+                      <div >
+                          <p class="mail">
+                              <a href="" target="_blank"><b>Admin@45friday</b></a>
+                              &nbsp;
+                              <span>
+                                  <img src="" alt="">   
+                                </span> 
+                            </p>
+                        </div>
+                        </div>
+                      </div>
+                      <div fxLayout="row">
+                          <div  fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxLayoutAlign="center center">
+                          <div >
+                              <p class="location">
+                                  <a href="" target="_blank"><b>Gachibowli</b></a>
+                                  &nbsp;
+                                  <span>
+                                      <img src="" alt="">   
+                                    </span> 
+                                </p>
+                            </div>
+                            </div>
+                          </div>
+            </div>
+            </div> 
+    </div>
+
+    
+
+          
+  </footer>
+</div>
